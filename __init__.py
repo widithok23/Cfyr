@@ -1,7 +1,8 @@
 import sys
 import os
+from folder_paths import base_path
 
-repo_dir = os.path.dirname(os.path.realpath(__file__))
+repo_dir = base_path
 sys.path.insert(0, repo_dir)
 original_modules = sys.modules.copy()
 
