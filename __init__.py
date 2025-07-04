@@ -1,8 +1,16 @@
 import sys
 import os
-import folder_paths
+# Dapatkan jalur direktori saat ini
+current_dir = os.path.dirname(os.path.abspath(__file__))
 
-repo_dir = base_path
+# Dapatkan jalur direktori induk
+parent_dir = os.path.dirname(current_dir)
+
+# Tambahkan direktori induk ke sys.path
+sys.path.append(parent_dir)
+
+# Sekarang Anda dapat mengimpor modul dari direktori induk
+import folder_paths
 sys.path.insert(0, repo_dir)
 original_modules = sys.modules.copy()
 
