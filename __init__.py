@@ -1,6 +1,6 @@
 import sys
 import os
-from folder_paths import base_path
+import folder_paths
 
 repo_dir = base_path
 sys.path.insert(0, repo_dir)
